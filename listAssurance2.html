@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orass-suite - Liste des Polices Auto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 flex h-screen font-sans overflow-hidden text-slate-800">
+
+    <aside class="w-64 bg-slate-900 text-slate-300 flex flex-col hidden md:flex border-r border-slate-800 relative z-10">
+        <div class="p-6 flex items-center gap-3 border-b border-slate-800">
+            <div class="w-8 h-8 rounded-full border-4 border-amber-700 border-t-slate-500"></div>
+            <span class="text-xl font-bold text-white tracking-wide">Orass-suite</span>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-1">
+            <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Clients</a>
+            <a href="#" class="block px-4 py-2.5 bg-slate-800 text-white rounded-md border-l-4 border-amber-700 shadow-sm text-sm font-medium">Polices Auto</a>
+            <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Propriété</a>
+            <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Réclamations</a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 flex flex-col h-screen overflow-y-auto">
+        <header class="bg-white border-b border-slate-200 p-4 flex justify-between items-center px-8">
+            <h2 class="text-xl font-bold text-slate-800">Gestion des Polices Auto</h2>
+            <div class="flex items-center gap-6">
+                <input type="text" placeholder="Rechercher par N° ou Immatriculation..." class="px-4 py-2 bg-slate-100 border border-transparent rounded-md text-sm outline-none focus:bg-white focus:border-slate-300 transition w-72 hidden sm:block">
+                <div class="flex items-center gap-3 border-l border-slate-200 pl-6">
+                    <span class="text-sm font-medium">Admin Orass</span>
+                    <div class="w-9 h-9 bg-slate-300 rounded-full"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-sm text-slate-500 font-semibold mb-1">Polices Auto Actives</p>
+                            <p class="text-3xl font-bold text-slate-900">850</p>
+                        </div>
+                        <span class="text-slate-400 text-2xl">🚗</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm border-t-4 border-t-slate-700">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-sm text-slate-500 font-semibold mb-1">Primes Collectées (Annuel)</p>
+                            <p class="text-3xl font-bold text-slate-900">1 450 k€</p>
+                        </div>
+                        <span class="text-slate-400 text-2xl">💶</span>
+                    </div>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg border border-amber-200 shadow-sm border-t-4 border-t-amber-700">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-sm text-amber-800 font-semibold mb-1">À Renouveler (30 jours)</p>
+                            <p class="text-3xl font-bold text-amber-900">45</p>
+                        </div>
+                        <span class="text-amber-700 text-2xl">⚠️</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg border border-slate-200 shadow-sm">
+                <div class="p-6 border-b border-slate-200 flex justify-between items-center bg-slate-50 rounded-t-lg">
+                    <h3 class="text-lg font-bold text-slate-800">Répertoire des Polices Auto</h3>
+                    <button class="bg-amber-700 hover:bg-amber-800 text-white px-5 py-2 rounded-md text-sm font-semibold transition shadow-sm flex items-center gap-2">
+                        <span>➕</span> Créer une Police
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="text-slate-500 text-xs uppercase tracking-wider border-b border-slate-200">
+                                <th class="p-4 font-semibold">N° Police</th>
+                                <th class="p-4 font-semibold">Client</th>
+                                <th class="p-4 font-semibold">Véhicule & Immat.</th>
+                                <th class="p-4 font-semibold">Formule</th>
+                                <th class="p-4 font-semibold">Échéance</th>
+                                <th class="p-4 font-semibold">Statut</th>
+                                <th class="p-4 font-semibold text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition">
+                                <td class="p-4 font-bold text-slate-800">AX-290034</td>
+                                <td class="p-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-slate-300 flex-shrink-0"></div>
+                                        <span class="font-semibold text-slate-700">Jean Dupont</span>
+                                    </div>
+                                </td>
+                                <td class="p-4">
+                                    <div class="font-semibold text-slate-800">Renault Clio 5</div>
+                                    <div class="text-xs text-slate-500">FR-2023-CD</div>
+                                </td>
+                                <td class="p-4 font-medium text-slate-600">Tous Risques</td>
+                                <td class="p-4 text-slate-600">22/09/2026</td>
+                                <td class="p-4"><span class="bg-slate-700 text-white px-3 py-1 rounded-sm text-xs font-semibold tracking-wide">Active</span></td>
+                                <td class="p-4 text-right">
+                                    <a href="details-police2.html" class="text-slate-500 hover:text-slate-800 font-medium px-3 py-1 border border-slate-300 rounded hover:bg-slate-100 transition inline-block">
+										👁️ Détails
+									</a>
+                                </td>
+                            </tr>
+                            
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition">
+                                <td class="p-4 font-bold text-slate-800">AX-290035</td>
+                                <td class="p-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-slate-300 flex-shrink-0"></div>
+                                        <span class="font-semibold text-slate-700">Sinyiia Branz</span>
+                                    </div>
+                                </td>
+                                <td class="p-4">
+                                    <div class="font-semibold text-slate-800">Peugeot 208</div>
+                                    <div class="text-xs text-slate-500">AB-123-CD</div>
+                                </td>
+                                <td class="p-4 font-medium text-slate-600">Tiers Étendu</td>
+                                <td class="p-4 text-amber-700 font-semibold">15/04/2026</td>
+                                <td class="p-4"><span class="bg-amber-700 text-white px-3 py-1 rounded-sm text-xs font-semibold tracking-wide">Renouvellement</span></td>
+                                <td class="p-4 text-right">
+                                    <a href="details-police2.html" class="text-slate-500 hover:text-slate-800 font-medium px-3 py-1 border border-slate-300 rounded hover:bg-slate-100 transition inline-block">
+										👁️ Détails
+									</a>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-slate-100 hover:bg-slate-50 transition">
+                                <td class="p-4 font-bold text-slate-800">AX-290036</td>
+                                <td class="p-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-slate-300 flex-shrink-0"></div>
+                                        <span class="font-semibold text-slate-700">Livan Jzoont</span>
+                                    </div>
+                                </td>
+                                <td class="p-4">
+                                    <div class="font-semibold text-slate-800">VW Golf 8</div>
+                                    <div class="text-xs text-slate-500">WW-999-ZZ</div>
+                                </td>
+                                <td class="p-4 font-medium text-slate-600">Tous Risques</td>
+                                <td class="p-4 text-slate-600">10/11/2026</td>
+                                <td class="p-4"><span class="bg-slate-500 text-white px-3 py-1 rounded-sm text-xs font-semibold tracking-wide">Suspendue</span></td>
+                                <td class="p-4 text-right">
+                                    <button class="text-slate-500 hover:text-slate-800 font-medium px-3 py-1 border border-slate-300 rounded hover:bg-slate-100 transition mr-1">
+                                        👁️ Détails
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="p-4 border-t border-slate-200 flex items-center justify-between text-sm text-slate-500">
+                    <span>Affichage de 1 à 3 sur 850 polices</span>
+                    <div class="flex gap-1">
+                        <button class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-100 disabled:opacity-50">Précédent</button>
+                        <button class="px-3 py-1 border border-slate-300 rounded bg-slate-800 text-white">1</button>
+                        <button class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-100">2</button>
+                        <button class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-100">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

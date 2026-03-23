@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orass-suite - Connexion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen font-sans">
+
+    <div class="flex w-full max-w-4xl bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-200">
+        <div class="hidden md:flex flex-col justify-center w-1/2 bg-slate-900 p-12 text-white relative">
+            <div class="absolute top-0 left-0 w-full h-2 bg-amber-700"></div>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-full border-4 border-amber-700 border-t-slate-500"></div>
+                <h1 class="text-3xl font-bold tracking-tight">Orass-suite</h1>
+            </div>
+            <p class="text-slate-400 text-lg leading-relaxed">
+                Gestion premium de portefeuilles d'assurance. Accédez à vos outils analytiques et gérez vos clients avec précision.
+            </p>
+        </div>
+
+        <div class="w-full md:w-1/2 p-10 lg:p-16 bg-white">
+            <h2 class="text-2xl font-bold text-slate-800 mb-2">Espace Collaborateur</h2>
+            <p class="text-slate-500 mb-8 text-sm">Veuillez vous authentifier pour accéder au système.</p>
+
+            <form>
+                <div class="mb-5">
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Identifiant professionnel</label>
+                    <input type="email" placeholder="prenom.nom@orass-suite.com" class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-800 focus:border-slate-800 outline-none transition bg-slate-50">
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="block text-sm font-semibold text-slate-700">Mot de passe</label>
+                        <a href="#" class="text-xs text-amber-700 hover:underline font-medium">Mot de passe oublié ?</a>
+                    </div>
+                    <input type="password" placeholder="••••••••" class="w-full px-4 py-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-slate-800 focus:border-slate-800 outline-none transition bg-slate-50">
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-md transition duration-200 shadow-md">
+                    Accéder au portail
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
