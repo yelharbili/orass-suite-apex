@@ -78,7 +78,7 @@ unistr('        alert("Veuillez remplir le pr\00E9nom et le nom !");'),
 ,p_protection_level=>'C'
 ,p_page_component_map=>'03'
 ,p_last_updated_by=>'USERADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20260323172536'
+,p_last_upd_yyyymmddhh24miss=>'20260323212702'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(5743711882822511)
@@ -93,13 +93,12 @@ wwv_flow_imp_page.create_page_plug(
 '        <div class="w-8 h-8 rounded-full border-4 border-amber-700 border-t-slate-500"></div>',
 '        <span class="text-xl font-bold text-white tracking-wide">Orass-suite</span>',
 '    </div>',
-'    <nav class="flex-1 px-4 py-6 space-y-1">',
-'        <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Tableau de bord</a>',
-'        <a href="f?p=&APP_ID.:10:&APP_SESSION." class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Clients</a>',
-'        <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Polices Auto</a>',
-unistr('        <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Propri\00E9t\00E9</a>'),
-unistr('        <a href="#" class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">R\00E9clamations</a>'),
+'',
+'     <nav class="flex-1 px-4 py-6 space-y-1">',
+'        <a href="f?p=&APP_ID.:10:&APP_SESSION."  class="block px-4 py-2.5 bg-slate-800 text-white rounded-md border-l-4 border-amber-700 shadow-sm text-sm font-medium">Clients</a>',
+'        <a href="f?p=&APP_ID.:20:&APP_SESSION." class="block px-4 py-2.5 hover:bg-slate-800 rounded-md transition text-sm font-medium">Polices Auto</a>',
 '    </nav>',
+'   ',
 '</aside>',
 '',
 '<!-- HEADER (Fixe en haut) -->',

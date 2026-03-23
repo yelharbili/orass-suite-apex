@@ -3,6 +3,9 @@ prompt --install
 @@application/delete_application.sql
 @@application/create_application.sql
 @@application/user_interfaces.sql
+@@workspace/remote_servers/192_168_108_149_ords_orassuitpdb.sql
+@@application/shared_components/data_profiles/api_polices_auto.sql
+@@application/shared_components/web_sources/api_polices_auto.sql
 @@application/shared_components/navigation/lists/navigation_menu.sql
 @@application/shared_components/navigation/lists/navigation_bar.sql
 @@application/shared_components/navigation/listentry.sql
@@ -80,6 +83,7 @@ prompt --install
 @@application/shared_components/user_interface/templates/report/cards.sql
 @@application/shared_components/user_interface/templates/report/search_results.sql
 @@application/shared_components/user_interface/templates/report/tableau_tailwind_orass.sql
+@@application/shared_components/user_interface/templates/report/tableau_polices_tailwind.sql
 @@application/shared_components/user_interface/templates/label/hidden.sql
 @@application/shared_components/user_interface/templates/label/optional.sql
 @@application/shared_components/user_interface/templates/label/optional_above.sql
@@ -111,6 +115,7 @@ prompt --install
 @@application/pages/page_00000.sql
 @@application/pages/page_00001.sql
 @@application/pages/page_00010.sql
+@@application/pages/page_00020.sql
 @@application/pages/page_09999.sql
 @@application/deployment/definition.sql
 @@application/deployment/checks.sql

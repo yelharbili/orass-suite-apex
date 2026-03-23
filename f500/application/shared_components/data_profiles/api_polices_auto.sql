@@ -1,0 +1,128 @@
+prompt --application/shared_components/data_profiles/api_polices_auto
+begin
+--   Manifest
+--     DATA PROFILE: API_Polices_Auto
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2023.10.31'
+,p_release=>'23.2.0'
+,p_default_workspace_id=>3628745592366285
+,p_default_application_id=>500
+,p_default_id_offset=>0
+,p_default_owner=>'ORASSADM'
+);
+wwv_flow_imp_shared.create_data_profile(
+ p_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'API_Polices_Auto'
+,p_format=>'JSON'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6402679385453295)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'ID'
+,p_sequence=>1
+,p_column_type=>'DATA'
+,p_data_type=>'NUMBER'
+,p_has_time_zone=>false
+,p_selector=>'id'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6402921098453295)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'STATUT'
+,p_sequence=>2
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'statut'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6403250031453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'FORMULE'
+,p_sequence=>3
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'formule'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6403553418453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'VEHICULE'
+,p_sequence=>4
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'vehicule'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6403885349453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'CLIENT_ID'
+,p_sequence=>5
+,p_column_type=>'DATA'
+,p_data_type=>'NUMBER'
+,p_has_time_zone=>false
+,p_selector=>'client_id'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6404148264453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'CLIENT_NOM'
+,p_sequence=>6
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'client_nom'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6404416280453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'DATE_ECHEANCE'
+,p_sequence=>7
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'date_echeance'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6404744543453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'NUMERO_POLICE'
+,p_sequence=>8
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'numero_police'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6405003893453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'PRIME_ANNUELLE'
+,p_sequence=>9
+,p_column_type=>'DATA'
+,p_data_type=>'NUMBER'
+,p_has_time_zone=>false
+,p_selector=>'prime_annuelle'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(6405347283453296)
+,p_data_profile_id=>wwv_flow_imp.id(6402474218453289)
+,p_name=>'IMMATRICULATION'
+,p_sequence=>10
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>4000
+,p_has_time_zone=>false
+,p_selector=>'immatriculation'
+);
+wwv_flow_imp.component_end;
+end;
+/
